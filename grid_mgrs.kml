@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<NetworkLink>
+	<name>Nearby Offline MGRS Gridlines</name>
+	<description><![CDATA[<a href="http://www.nearby.org.uk/google.html">Notes on these features</a>]]></description>
+	<open>1</open>
+	<Url>
+		<href>http://127.0.0.1:7777/offline_nearby/grid_mgrs.kmz.php</href>
+		<viewFormat>BBOX=[bboxWest],[bboxSouth],[bboxEast],[bboxNorth]&amp;LOOKAT=[lookatLon],[lookatLat],[lookatRange],[lookatTilt],[lookatHeading],[horizFov],[vertFov]</viewFormat>
+		<viewRefreshMode>onStop</viewRefreshMode>
+		<viewRefreshTime>0</viewRefreshTime>
+	</Url>
+</NetworkLink>
+</kml>

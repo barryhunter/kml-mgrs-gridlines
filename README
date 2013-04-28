@@ -1,0 +1,30 @@
+Source: http://www.nearby.org.uk/blog/2007/06/19/mgrs-layer-for-google-earth-offline/
+
+
+Thanks to help from Mark Ferneau, have finally the MGRS layer packaged up ready for use off-line (and GPL licenced!), an often requested feature.
+
+These instructions assume Windows, and that you don.t have a local webserver running. The zip file should be usable to set it up on any local server capable of running PHP, just don.t forget to edit the link in the network link to the path of your webserver.
+
+
+Without further ado, the instructions:
+
+* Download Appweb web server from: http://www.appwebserver.org/ (Tested with 2.2.0)
+
+* Install with the general default options
+
+* Save AppWeb.conf file in C:\program files\MBedthis Appweb\, overwriting the default (this just sets up the minimum needed for PHP to run, removing some of the extra stuff)
+
+* Copy php5ts.dll from C:\Program Files\Mbedthis Appweb\lib\modules\ to C:\Program Files\Mbedthis Appweb\bin\ (not sure why this step is required but Appweb seems to need it)
+
+* Extract grid_mgrs.zip into directory C:\appweb\web\offline_nearby\
+  (also ready extracted in grid_mgrs/ folder can jsut copy that folder) 
+
+* Start up the appweb server, using Icon in Start Menu. (if itâ..s already running, icon in System Tray, exit it)
+
+* Open the network link . save it to your My Places 
+  grid_mgrs.kml (just double click in windows explorer)
+
+
+If there is interest could possible package up some of the other layers run on a local webserver in a similar fashion.
+
+Finally, use at your own risk, it works for us, but your mileage may vary. We welcome any and all feedback (esp. patches!)
